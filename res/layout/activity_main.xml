@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/celsius"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/settemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/celsius"
+        android:layout_alignBottom="@+id/celsius"
+        android:layout_centerHorizontal="true"
+        android:text="@string/defaulttemp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/getohm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settemp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="4"
+        android:inputType="number"
+        android:maxLength="4"
+        android:text="@string/defaultohm" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/getohm"
+        android:layout_alignBottom="@+id/getohm"
+        android:layout_alignLeft="@+id/celsius"
+        android:text="@string/ohm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getohm"
+        android:layout_marginRight="28dp"
+        android:layout_toLeftOf="@+id/getohm"
+        android:text="@string/ohm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/setohm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getohm"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/TextView01"
+        android:text="@string/setohm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
